@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ChillVision</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Particle Container -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="navbar-brand bold"><img src="White and Grey Simple Modern Sunglasses Store Circle Logo.gif" alt="Logo" class="logo"> ChillVision</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html#features" class="nav-link bold">Features</a></li>
+                    <li class="nav-item"><a href="index.html#pricing" class="nav-link bold">Pricing</a></li>
+                    <li class="nav-item"><a href="index.html#testimonials" class="nav-link bold">Testimonials</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link bold">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Shopping Cart Section -->
+    <section id="cart">
+        <div class="container cart-container">
+            <h2 class="bold">Shopping Cart</h2>
+            <div class="cart-item-box">
+                <img src="gold.png" alt="ChillVision Sunglasses" class="product-image small-image">
+                <div class="cart-info">
+                    <p class="bold">ChillVision Shades</p>
+                    <p class="bold">Price: $159.20</p>
+                    <label for="quantity" class="bold">Quantity:</label>
+                    <select id="quantity" name="quantity" onchange="updateTotal()" class="bold">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="total-payment-box">
+                <div class="total-price-box">
+                    <p id="total-price" class="bold">Total Price: $159.20</p>
+                </div>
+                <div class="payment-methods">
+                    <h3 class="bold">Payment Methods</h3>
+                    <form id="payment-form">
+                        <div class="payment-option">
+                            <input type="radio" id="credit" name="payment" value="credit" checked>
+                            <label for="credit" class="bold">Credit/Debit Card</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="apple" name="payment" value="apple">
+                            <label for="apple" class="bold">Apple Pay</label>
+                        </div>
+                        <button type="submit" class="cta-button bold">Checkout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" class="bold"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="scripts.js"></script>
+    <script src="particles-config.js"defer></script>
+    <script src="cart.js" defer></script>
+</body>
+</html>
+

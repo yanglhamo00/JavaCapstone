@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChillVision</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Particle Container -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="index.html" class="navbar-brand bold"><img src="White and Grey Simple Modern Sunglasses Store Circle Logo.gif" alt="Logo" class="logo"> <span style="color: #d4af37;">ChillVision</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#features" class="nav-link bold">Features</a></li>
+                        <li class="nav-item"><a href="#pricing" class="nav-link bold">Pricing</a></li>
+                        <li class="nav-item"><a href="#testimonials" class="nav-link bold">Testimonials</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link bold">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1 class="bold">Stay Cool and Stylish</h1>
+            <p class="bold">Introducing the first sunglasses that blow soft, cool air to keep you comfortable.</p>
+            <div class="pricing-box" id="pricing">
+                <img src="gold.png" alt="ChillVision Shades" class="product-image small-image">
+                <h3 class="bold">ChillVision Sunglasses</h3>
+                <p class="bold">Original Price: <span class="line-through">$199</span></p>
+                <p class="bold">Discounted Price: <span class="bold">$159.20</span></p>
+                <p class="description bold">Stay cool with our premium sunglasses equipped with soft cooling technology.</p>
+                <button class="cta-button bold" onclick="addToCart()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2 class="bold">Features</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <h3 class="bold">UV Protection</h3>
+                    <p class="bold">Protect your eyes from harmful UV rays with our high-quality lenses.</p>
+                </div>
+                <div class="feature-box">
+                    <h3 class="bold">Water Resistant</h3>
+                    <p class="bold">Our sunglasses are perfect for all-weather conditions, rain or shine.</p>
+                </div>
+                <div class="feature-box">
+                    <h3 class="bold">Comfort Fit</h3>
+                    <p class="bold">Designed for comfort and style, you can wear them all day long.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Product Demo Section -->
+<section id="product-demo">
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="black.png" class="d-block w-100" alt="Designer Features">
+                </div>
+                <div class="carousel-item">
+                    <img src="shades.png" class="d-block w-100" alt="Shades">
+                </div>
+                <div class="carousel-item">
+                    <img src="gu.png" class="d-block w-100" alt="GU">
+                </div>
+                <div class="carousel-item">
+                    <img src="chanelpearl.png" class="d-block w-100" alt="Chanel Pearl">
+                </div>
+                <div class="carousel-item">
+                    <img src="carti.png" class="d-block w-100" alt="Carti">
+                </div>
+            </div>
+            <div class="carousel-caption">
+                <h1 class="designer-features">Designer Features</h1>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="bold">What Our Customers Say</h2>
+            <div class="testimonial-box">
+                <p class="bold">"These sunglasses are a game-changer! I stay cool even on the hottest days." - Jane Doe</p>
+            </div>
+            <div class="testimonial-box">
+                <p class="bold">"Stylish and functional. I love my ChillVision sunglasses! Also love the exclusive designer glasses selection!!" - John Smith</p>
+            </div>
+            <div class="testimonial-box">
+                <p class="bold">"I can't imagine going back to regular sunglasses. These are fantastic!" - Emily Johnson</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="bold">Contact Us</h2>
+            <div class="contact-container">
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" class="bold">
+                    <input type="email" placeholder="Your Email" class="bold">
+                    <textarea placeholder="Your Message" class="bold"></textarea>
+                    <button type="submit" class="cta-button bold">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p class="bold">Email: contact@chillvisionsunglasses.com</p>
+                    <p class="bold">Phone: (123) 456-7890</p>
+                    <p class="bold">Address: 123 Main Street, New York 11368</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" class="bold"><i class="fas fa-arrow-up"></i></button>
+    <footer>
+        <div class="container">
+            <p class="bold">&copy; 2024 ChillVision Co. Founded by Yanchen Lhamo</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Success!',
+                text: 'Message sent!',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        });
+
+        function addToCart() {
+            window.location.href = "cart.html";
+        }
+
+        // Back to Top Button
+        var mybutton = document.getElementById("backToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="particles-config.js"></script>
+</body>
+</html>
